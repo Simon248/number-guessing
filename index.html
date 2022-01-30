@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>GUESS THE NUMBER</h1>
+    </header>
+
+    <section class='generator_param'>
+        <label for="min_random">Generate random number between: </label><input type="number" id="min_random" class="min_random">
+        <label for="max_random">and: </label><input type="number" id="max_random" class="max_random">
+        <input type="submit" value="generate new number" class="numberGenerationSubmit">
+    </section>
+
+
+
+    <section class='enter_guess'>
+        <label for="guessField">Enter a guess: </label><input type="text" id="guessField" class="guessField">
+        <input type="submit" value="Submit guess" class="guessSubmit">
+    </section>
+
+    <section class='hist_proposal'>
+        <div class='resultParas'>
+        <p class="hist_guesses"></p>
+        <p class="lastResult"></p>
+        <p class="lowOrHi"></p></div>
+        </div>
+    </section>
+
+    
+    
+    
+    <footer>
+    <p>Adaptation du tutoriel Mozzilla </p>
+    </footer> 
+    
+    
+
+    <script src='script.js'></script>
+</body>
+</html>
